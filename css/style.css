@@ -233,6 +233,51 @@ border: 0;
 
 
 
+#search-results .item {margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#search-results .item h3 {margin-top:0; font-size:18px;}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+
+    overflow:visible;
+}
+
+
+
+
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+
+
+#search-results .item ul {padding-left:0; margin-bottom:0;}
+#search-results .item ul li {display:inline; margin-right:10px; font-size:13px;}
+#search-results .item ul li span.glyphicon {font-size:10px; margin-right:10px;}
+
+
+
+
+
+
+
+
 
 
 
