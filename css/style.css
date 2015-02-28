@@ -63,14 +63,45 @@
 
 
 
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
 
-body { background:#ebecf1; font-family: 'arsenalregular'; font-size:16px;}
+body { background:#ebecf1; font-family: 'arsenalregular'; font-size:16px; }
+
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#page {
+	padding-bottom:80px; /* Height of the footer*/
+}
+
+#footer {
+	width:100%;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#footer .container {border-top:#A4A4A4 1px solid;} 
+
+
+
 i {font-style:normal; font-family: 'arsenalitalic';}
 h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Slab', serif; font-weight:normal;}
 
 
-h1#page-header {color:#21b79a; text-transform: uppercase; font-size:30px; line-height:60px; margin-bottom:40px;}
+h1#page-header {color:#21b79a; text-transform: uppercase; font-size:30px; line-height:60px; margin-bottom:20px;}
 h1#page-header span {border-bottom:3px #21b79a solid; padding-right:100px;}
+.sub-header {margin:0; font-size:20px;}
+
+.page-content { margin-top:40px; margin-bottom:60px;}
 
 .col {padding-left:15px; padding-right:15px;}
 
@@ -152,14 +183,8 @@ box-shadow:         none;
 
 
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-}
 
-.footer .container {border-top:#A4A4A4 1px solid;} 
+
 
 
 
@@ -192,6 +217,16 @@ box-shadow:         none;
 .modal-dialog {top:30%;}
 .modal-header {background:#2196f3; padding-bottom: 24px !important; color:#fff;}
 .mail-pic {background: url("../images/mail.png") no-repeat left; padding-left: 50px;}
+
+
+
+.box{ 
+	background:#fff; 
+	padding:24px;
+box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+border-radius: 2px;
+border: 0;
+}
 
 
 
