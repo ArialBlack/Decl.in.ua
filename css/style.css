@@ -66,12 +66,18 @@
 
 body { background:#ebecf1; font-family: 'arsenalregular'; font-size:16px;}
 i {font-style:normal; font-family: 'arsenalitalic';}
+h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Slab', serif; font-weight:normal;}
+
+
+h1#page-header {color:#21b79a; text-transform: uppercase; font-size:30px; line-height:60px; margin-bottom:40px;}
+h1#page-header span {border-bottom:3px #21b79a solid; padding-right:100px;}
 
 .col {padding-left:15px; padding-right:15px;}
 
 .clr {clear:both; height:1px;}
 
 .white {color:#FFFFFF;}
+
 
 .sm {font-size:13px;}
 
@@ -83,6 +89,11 @@ a.ajaxx { text-decoration:none; border-bottom: 1px dashed;}
 a.classic {text-decoration:underline;}
 
 .green {color:#21b79a;}
+
+.blue, 
+.breadcrumb a,
+.white:hover 
+{color:#2196f3;} 
 
 
 #unsubscribe-vol {display:block; clear:both;}
@@ -99,13 +110,30 @@ a.classic {text-decoration:underline;}
 
 .on-white {background:#FFFFFF;}
 
+.breadcrumb {
+    background: none;
+}
+
 
 /* NAVBAR */
-#navbar {border:none; background:#fff; border-radius:0; margin-bottom:0; padding-top:20px; padding-bottom:20px;}
+#navbar {border:none; background:#fff; border-radius:0; margin-bottom:0; padding-top:20px; padding-bottom:30px;
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:    0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+box-shadow:         0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+}
 
-#navbar li  {margin-right:20px;}
+.front #navbar 
+{
+-webkit-box-shadow: none;
+-moz-box-shadow:    none;
+box-shadow:         none;
+	
+}
+
+#navbar li  {margin-right:40px;}
 #navbar li:first-child a { padding-left:0;}
-#navbar li a {color:#5b5b5b; text-transform:uppercase; font-size:24px; font-family: 'ws';}
+#navbar li a {color:#5b5b5b; text-transform:uppercase; font-size:24px; font-family: 'ws'; padding-left:0px; padding-right:0px; padding-bottom:10px; border-bottom:2px #fff solid;}
+#navbar li a:hover, #navbar li a:active {border-bottom:2px #2196f3 solid; color:#2196f3;}
 
 .navbar-inverse .navbar-toggle {border-color:#2196f3;}
 .navbar-inverse .navbar-toggle .icon-bar {background-color:#2196f3;}
@@ -146,11 +174,6 @@ a.classic {text-decoration:underline;}
 .digits {font-family: 'Roboto Slab', serif;}
 .stats .digits {color:#e95000; font-size:20px; font-weight:bold; line-height:20px;}
 .stats p {margin-bottom:0; color:white;} 
-
-
-
-
-
  
  
 #infobox a#closeme span:before {
@@ -158,6 +181,29 @@ a.classic {text-decoration:underline;}
   font-size:20px; color:#A6A6A6;   
 }
 
+
+.modal .close {
+    color: #fff;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.modal {background: url("../images/overlay.png") repeat;}
+.modal-dialog {top:30%;}
+.modal-header {background:#2196f3; padding-bottom: 24px !important; color:#fff;}
+.mail-pic {background: url("../images/mail.png") no-repeat left; padding-left: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+/* search in front */
 
 #searchbox { background:#21b79a; padding-top:80px; padding-bottom:80px; margin-bottom:40px;}
 
@@ -167,39 +213,33 @@ a.classic {text-decoration:underline;}
 .input-group .form-control {border-width:0;}  
 #searchbox  input { font-size:24px;  padding-bottom:10px; padding:20px 0; } 
 
-
-
-
-
-
-
-fieldset[disabled] .form-control:not(textarea):not(select),
-.form-control-wrapper .form-control:not(textarea):not(select),
-.form-control:not(textarea):not(select),
-fieldset[disabled] .form-control:focus:not(textarea):not(select),
-.form-control-wrapper .form-control:focus:not(textarea):not(select),
-.form-control:focus:not(textarea):not(select),
-fieldset[disabled] .form-control.focus:not(textarea):not(select),
-.form-control-wrapper .form-control.focus:not(textarea):not(select),
-.form-control.focus:not(textarea):not(select) {
+#searchbox fieldset[disabled] .form-control:not(textarea):not(select),
+#searchbox .form-control-wrapper .form-control:not(textarea):not(select),
+#searchbox .form-control:not(textarea):not(select),
+#searchbox fieldset[disabled] .form-control:focus:not(textarea):not(select),
+#searchbox .form-control-wrapper .form-control:focus:not(textarea):not(select),
+#searchbox .form-control:focus:not(textarea):not(select),
+#searchbox fieldset[disabled] .form-control.focus:not(textarea):not(select),
+#searchbox .form-control-wrapper .form-control.focus:not(textarea):not(select),
+#searchbox .form-control.focus:not(textarea):not(select) {
   height: 68px;
 }
 
-select.form-control {
+#searchbox select.form-control {
   height: 63px;
 }
-select[multiple].form-control,
-select[multiple].form-control:focus,
-select[multiple].form-control.focus {
+#searchbox select[multiple].form-control,
+#searchbox select[multiple].form-control:focus,
+#searchbox select[multiple].form-control.focus {
   height: 125px;
 }
 
 
-.form-control-wrapper .material-input:after {
+#searchbox .form-control-wrapper .material-input:after {
   height: 58px;
 
 }
-.form-control-wrapper .input-lg ~ .material-input:after {
+#searchbox .form-control-wrapper .input-lg ~ .material-input:after {
   height: 86px;
 }
 
